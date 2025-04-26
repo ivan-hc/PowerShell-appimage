@@ -1,1 +1,1 @@
-https://github.com/ivan-hc/PowerShell-appimage/releases/download/continuous/PowerShell-v7.5.0-x86_64.AppImage
+https://github.com/ivan-hc/PowerShell-appimage/releases/download/continuous/PowerShell-v7.5.1-x86_64.AppImage
