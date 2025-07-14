@@ -1,2 +1,2 @@
 https://github.com/ivan-hc/PowerShell-appimage/releases/download/continuous/PowerShell-v7.5.2-x86_64.AppImage
-Sun Jul 13 00:55:17 UTC 2025
+Mon Jul 14 00:52:54 UTC 2025
