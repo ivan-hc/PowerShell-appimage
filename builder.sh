@@ -41,6 +41,11 @@ export UNION_PRELOAD="${HERE}"
 exec "${HERE}"/pwsh "$@"
 EOF
 chmod a+x ./"$APP".AppDir/AppRun
-ARCH=x86_64 ./appimagetool --comp zstd --mksquashfs-opt -Xcompression-level --mksquashfs-opt 20 ./"$APP".AppDir
+
+
+ARCH=x86_64 ./appimagetool --comp zstd --mksquashfs-opt -Xcompression-level --mksquashfs-opt 20 \
+	-u "gh-releases-zsync|$GITHUB_REPOSITORY_OWNER|PowerShell-appimage|continuous|*x86_64.AppImage.zsync" \
+	./"$APP".AppDir PowerShell-"$VERSION"-x86_64.AppImage || exit 1
+
 cd ..
-mv ./tmp/*.AppImage ./PowerShell-"$VERSION"-x86_64.AppImage
+mv ./tmp/*.AppImage* ./
